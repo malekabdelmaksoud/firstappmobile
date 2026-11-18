@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_large">
+
+    <TextView
+        android:id="@+id/txtEventsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:text="@string/title_events"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtEventsDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_xlarge"
+        android:text="@string/placeholder_events"
+        android:textAlignment="center"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_size_medium" />
+
+    <Button
+        android:id="@+id/btnBackEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:backgroundTint="@color/primary"
+        android:text="@string/btn_back"
+        android:textColor="@color/text_white" />
+</LinearLayout>

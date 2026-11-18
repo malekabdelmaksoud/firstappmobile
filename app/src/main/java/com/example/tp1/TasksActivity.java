@@ -1,0 +1,26 @@
+package com.example.tp1;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class TasksActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_tasks);
+
+        // 1. Récupérer le bouton btnBackTasks via findViewById
+        Button btnBackTasks = findViewById(R.id.btnBackTasks);
+
+        // 2. Définir un écouteur de clic avec finish() pour revenir à l'accueil
+        btnBackTasks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
+}
